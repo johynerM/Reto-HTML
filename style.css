@@ -1,0 +1,37 @@
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+        /* CSS base: no borrar */
+    .registro input { width: 100%; }
+    .registro{
+        width: 25rem;
+        padding: 2rem;
+        border: 2px solid red;
+    }
+    .aviso{
+        position: sticky;
+        top: 0;
+        padding: 1rem;
+        background: lightblue;
+        text-align: center;
+    }
+    label{
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+    .registro .corto{
+        height: 15ch;
+    }
+    .acciones{
+        display: flex;
+        justify-content: right;
+        gap: 1rem;
+    }
+    .error{
+        display: none;
+    }
+    .terminos{
+        height: 120vh;
+    }
