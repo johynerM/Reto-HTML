@@ -1,0 +1,94 @@
+/* .foto{
+    background: lightblue;
+    border: 2px solid black;
+    height: 80px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+} */
+/*  .menu{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px 20px;
+ } */
+  .body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgreen;
+    margin: 0;
+    padding: 0;
+  }
+  .registro{
+    display: grid;
+    justify-content: center;
+    max-width: 40rem;
+    gap:1rem;
+    background: rgb(210, 55, 210);
+    border-radius: 15px;
+
+    grid-template-areas: 
+    "nombre"
+    "correo"
+    "plan"
+    "objetivo"
+    "boton";
+  }
+  .campo-nombre{
+    grid-area:nombre;
+  }
+    .campo-email{
+    grid-area:correo;
+  }
+    .campo-plan{
+    grid-area:plan;
+  }
+    .campo-mensaje{
+    grid-area:objetivo;
+  }
+    .enviar{
+    grid-area:boton;
+  }
+.registro div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:0.3rem;
+}
+input, select{
+    padding: 0.5rem;
+    font-size: 1rem;
+}    
+.enviar{
+    padding: 0.8rem;
+    font-size: 1rem;
+    background: lightblue;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+}
+
+  @media(min-width:600px) { 
+    .registro{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "nombre correo"
+        "plan plan"
+        "objetivo obejtivo"
+        "boton boton" ;
+}
+.campo-nombre{
+    grid-area: nombre;
+}
+.campo-email{
+    grid-area: correo;
+}
+.campo-pĺan{
+    grid-area: plan;
+}
+.campo-mensaje{
+    grid-area: objetivo;
+}
+.enviar{
+    grid-area: boton;
+}
+}
